@@ -36,6 +36,7 @@ No server-side code, no model changes — the counter never blocks typing
 or saving, it's purely a visual guide.
 """,
     'depends': ['web'],
+    'images': ['static/description/banner.png'],
     'data': [],
     'assets': {
         'web.assets_backend': [
