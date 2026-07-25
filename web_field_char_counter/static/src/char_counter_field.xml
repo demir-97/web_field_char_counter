@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="web_field_char_counter.CharCounterField">
+        <div class="o_field_char_counter_wrapper">
+            <t t-call="web.CharField"/>
+            <div t-if="!props.readonly" class="o_field_counter text-muted small" t-att-class="{'text-danger': counterOverLimit}" t-esc="counterLabel"/>
+        </div>
+    </t>
+
+    <t t-name="web_field_char_counter.TextCounterField">
+        <div class="o_field_char_counter_wrapper">
+            <t t-call="web.TextField"/>
+            <div t-if="!props.readonly" class="o_field_counter text-muted small" t-att-class="{'text-danger': counterOverLimit}" t-esc="counterLabel"/>
+        </div>
+    </t>
+
+</templates>
