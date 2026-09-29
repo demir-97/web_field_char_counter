@@ -45,7 +45,5 @@ or saving, it's purely a visual guide.
     },
     'installable': True,
     'application': False,
-    'license': 'OPL-1',
-    'price': 6.0,
-    'currency': 'USD',
+    'license': 'LGPL-3',
 }
