@@ -1,10 +1,10 @@
 {
     'name': 'Field Character / Word Counter',
-    'version': '20.0.1.0.0',
+    'version': '20.0.1.0.1',
     'category': 'Productivity',
     'author': 'Meisanqo',
     'support': 'meisanqo@outlook.com',
-    'summary': 'Live character/word counter under any field — turns red past the limit.',
+    'summary': "Character counter and word counter for any field: a live \"42 / 160 characters\" line under the input that turns red past the character limit. Two drop-in widgets, char_counter for Char fields and text_counter for Text fields, with an optional counter_max target and a characters or words counter type; a field's own size limit is used when no target is set. Made for SEO meta descriptions, SMS and email templates, and any field with a length limit. Purely visual: it never blocks typing or saving.",
     'description': """
 Field Character / Word Counter
 =================================
