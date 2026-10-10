@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- Odoo 20 addresses the component explicitly in templates (`this.props`,
+         `this.counterLabel`); the bare form no longer appears anywhere in
+         core. -->
+
+    <t t-name="web_field_char_counter.CharCounterField">
+        <div class="o_field_char_counter_wrapper">
+            <t t-call="web.CharField"/>
+            <div t-if="!this.props.readonly" class="o_field_counter text-muted small" t-att-class="{'text-danger': this.counterOverLimit}" t-esc="this.counterLabel"/>
+        </div>
+    </t>
+
+    <t t-name="web_field_char_counter.TextCounterField">
+        <div class="o_field_char_counter_wrapper">
+            <t t-call="web.TextField"/>
+            <div t-if="!this.props.readonly" class="o_field_counter text-muted small" t-att-class="{'text-danger': this.counterOverLimit}" t-esc="this.counterLabel"/>
+        </div>
+    </t>
+
+</templates>
